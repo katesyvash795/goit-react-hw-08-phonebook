@@ -9,14 +9,14 @@ import RoundSpinner from '../components/Loading/Loading';
 import Error from '../components/Error/Error';
 
 function Contacts() {
-  const token = useSelector(state => state.auth.token);
+  // const token = useSelector(state => state.auth.token);
   const isLoading = useSelector(getIsLoading);
   const isError=useSelector(getError)
-  console.log('Token:', token);
+  // console.log('Token:', token);
   const dispatch = useDispatch();
   useEffect(() => {
-    dispatch(fetchContacts(token));
-  }, [dispatch,token]);
+    dispatch(fetchContacts());
+  }, [dispatch]);
 
   return (
     <div>
