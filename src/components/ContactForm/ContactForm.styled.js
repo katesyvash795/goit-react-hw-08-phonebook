@@ -1,13 +1,14 @@
 import styled from 'styled-components';
 import { Field, Form } from 'formik';
 export const FormContainer = styled.div`
-  display: flex;
-  padding: 50px;
-  background-color: #d9d9d9;
-  border-radius: 10px;
-  flex-direction: column;
-  max-width: 300px;
-`;
+display: flex;
+    flex-direction: column;
+    background-color: #d9d9d9;
+    padding: 50px;
+    border-radius: 10px;
+    width: 400px;
+    margin: 0 auto;
+    `;
 
 export const Label = styled.label`
   margin-bottom: 5px;
@@ -36,6 +37,6 @@ export const SubmitButton = styled.button`
   font-size: 16px;
 
   &:hover {
-    background-color: #e30b0b;
+    background-color: #014287;
   }
 `;

@@ -8,7 +8,7 @@ const override = css`
   border-color: red;
 `;
 
-const RoundSpinner = ({ loading }) => {
+export const RoundSpinner = ({ loading }) => {
   return (
     <div className="sweet-loading">
       <RingLoader css={override} size={60} color={"#123abc"} loading={loading} />

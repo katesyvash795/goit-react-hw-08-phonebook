@@ -28,6 +28,6 @@ export const ResetButton = styled.button`
   font-size: 16px;
 
   &:hover {
-    background-color: #e30b0b;
+    background-color: #014287;
   }
 `;
