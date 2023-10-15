@@ -4,14 +4,10 @@ import axios from "axios";
 // axios.defaults.baseURL = 'https://goit-task-manager.herokuapp.com';
 export const fetchContacts = createAsyncThunk(
   "contacts/fetchAll",
-  async (token, thunkAPI) => {
+  async (_, thunkAPI) => {
     try {
       // Теперь можно использовать token в запросе
-      const response = await axios.get("/contacts", {
-        headers: {
-          Authorization: `Bearer ${token}`,
-        },
-      });
+      const response = await axios.get("/contacts");
       return response.data;
     } catch (e) {
       return thunkAPI.rejectWithValue(e.message);
